@@ -38,7 +38,11 @@
             href="https://github.com/lutimi/"
             target="_blank"
             style="text-decoration:none"
+<<<<<<< HEAD
           >PregnancySafe</a>
+=======
+          >Pregnancy Safe</a>
+>>>>>>> Feature-Calendar
         </p>
       </div>
     </template>

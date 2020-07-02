@@ -13,7 +13,7 @@
         small
         class="ml-0 google-font"
         style="text-transform: capitalize;" 
-        text
+        text="Pregnancy Safe"
         @click="onClick($event, link)"
     >
         <span>{{ link.text }}</span>

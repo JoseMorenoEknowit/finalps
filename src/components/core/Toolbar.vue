@@ -8,7 +8,7 @@
         aria-label="Communiy homepage"
         style="text-decoration:none;font-size:110%"
         :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
-      >{{config.generalConfig.name || ""}}</router-link>
+      >Pregnancy Safe</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
 
