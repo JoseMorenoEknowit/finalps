@@ -5,6 +5,8 @@
         <v-row class="py-0 my-0">
           <v-col md="3" lg="2" sm="4" cols="6" class="pa-1 mb-0" v-for="(item,i) in data" :key="i">
             <CoreTeamMemberCard :data="item" />
+
+
           </v-col>
         </v-row>
       </v-col>

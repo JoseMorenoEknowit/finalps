@@ -74,7 +74,7 @@ export default new Vuex.Store({
         to: '/blogs',
         icon: 'mdi-blogger',
         meta: {
-          showToolbar: true,
+          showToolbar: false,
           showBottomNav: false
         },
       }

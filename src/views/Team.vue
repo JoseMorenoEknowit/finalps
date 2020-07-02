@@ -78,35 +78,13 @@ export default {
     data:() =>({
       loader:true,
       OrganizingTeam:[],
-      CoreTeam:[],
+      CoreTeam:[1
+      ],
       Volunteers:[],
       notFound:false,
       ErrorMsg:''
     }),
-    mounted(){
-        this.getAllTeamMembers()
-    },
-    methods:{
-        getAllTeamMembers(){
-          this.loader = true
-          service.getTeam().then(res=>{
-            if(res.success==true){
-              this.OrganizingTeam = res.data.filter(res=>res.role=='Organizing Team' && res.visible )
-              this.CoreTeam = res.data.filter(res=>res.role=='Core Team' && res.visible )
-              this.Volunteers = res.data.filter(res=>res.role=='Volunteer' && res.visible )
-              this.loader = false
-              this.notFound = false
-            }else{
-              this.notFound = true
-              this.loader = false
-            }
-          }).catch(e=>{
-            this.loader = false
-            this.notFound = true
-            this.ErrorMsg = e
-          })
-        }
-    }
+
 
 }
 </script>
