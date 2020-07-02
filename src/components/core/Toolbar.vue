@@ -33,7 +33,7 @@
     <offline @detected-condition="handleConnectivityChange"></offline>
     <v-toolbar-title
       v-if="isOffline"
-      style="background-color:red;border:1px solid red;border-radius:6px;color:white;font-size:90%"
+      style="background-color:#BEB5F5;border:1px solid red;border-radius:6px;color:white;font-size:90%"
       class="google-font px-2"
     >Offline</v-toolbar-title>
     <PushNotification class="mr-1" />
@@ -92,7 +92,7 @@ export default {
 </script>
 <style scoped>
   .whiteText{
-    color:white
+    color:#BEB5F5
   } 
   .blackText{
     color: rgba(0,0,0,.87);
