@@ -50,15 +50,7 @@ export default new Vuex.Store({
           showBottomNav: false
         },
       },
-      {
-        text: 'Sobre Nosotros',
-        to: '/about',
-        icon: 'mdi-comment-alert',
-        meta: {
-          showToolbar: true,
-          showBottomNav: true
-        },
-      },
+    
       {
         text: 'Mi obstreticia',
         to: '/contact',
