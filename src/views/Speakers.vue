@@ -15,7 +15,7 @@
         class="pb-3"
         :class="this.$vuetify.theme.dark == true?'black':''"
       >
-        <v-col md="12" lg="10" sm="11" xs="12" class="pt-0" v-if="SpeakersData.length>0">
+        <v-col md="12" lg="10" sm="11" xs="12" class="pt-0" v-if="SpeakersData.length<0">
           <v-container fluid class="py-0 my-0">
             <v-row align="center" justify="center" class="py-0 my-0">
               <v-col cols="12" md="12" lg="12" sm="12" class="py-0 my-0">
@@ -42,7 +42,7 @@
             </v-row>
           </v-container>
         </v-col>
-        <v-col v-else-if="loader ==false && SpeakersData.length == 0" md="12" lg="12" sm="12" cols="12" class="text-center">
+        <v-col v-else-if="loader ==false && SpeakersData.length > 0" md="12" lg="12" sm="12" cols="12" class="text-center">
           <v-img
             :src="require('@/assets/img/svg/DataNotFound.svg')"
             :lazy-src="require('@/assets/img/svg/DataNotFound.svg')"
@@ -55,7 +55,7 @@
               </v-row>
             </template>
           </v-img>
-          <h2 class="google-font">Speakers Not Found</h2>
+          <h2 class="google-font">No tienes pruebas medicas pasadas</h2>
           </v-col>
         <v-col v-if="loader" md="12" lg="10" xs="12" class="pt-3">
           <v-container fluid class>

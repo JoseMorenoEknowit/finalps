@@ -8,7 +8,7 @@
                <v-avatar size="100">
               
      
-        <v-img src="https://i.ibb.co/BCMwqBj/person3.jpg" aspect-ratio="1.7"></v-img>
+        <v-img src="https://i.ibb.co/Hd42cSN/logoicono.png" aspect-ratio="1.7"></v-img>
  
                 </v-avatar>
                
@@ -23,13 +23,13 @@
           class="px-5 google-font"
           primary-title
         >
-         Luis Tcona
+         Luis Ticona - Gonzalo Uría - Victor Fajardo - Joao Basauri
         </v-card-title>
 
         <v-card-text class="pa-5">
-            <p class="google-font">Soy estudiante de la carrera de ingenieria de software en la universidad peruana de ciencias aplicadas en la upc
+            <p class="google-font">Somos estudiantes de la carrera de ingenieria de software en la universidad peruana de ciencias aplicadas en la upc
             </p>
-            <p class="google-font">Tengo 20 años </p>
+            <p class="google-font">Queremos especializarnos en la creacion de novedosas starUps que ayuden a mejorar la vida diaria de todos  </p>
             
            
 
@@ -56,7 +56,7 @@
 import socialMediaDetails from '@/components/common/SocialInfo'
   export default {
     components:{
-        
+
     },
     inject: ['theme'],
     props:['data'],
@@ -65,15 +65,8 @@ import socialMediaDetails from '@/components/common/SocialInfo'
         dialog: false,
       }
     },
-    mounted(){
-     
-    },
-    methods:{
-      goToTeam(id){
-        this.$router.push("/team/" + id);
-      },
-    }
-    
+
+
     }
   
 </script>

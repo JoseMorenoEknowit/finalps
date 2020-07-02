@@ -10,7 +10,7 @@
       </v-img>
     </v-avatar>
     <p class="mt-3 mb-0 google-font" style="font-size:110%">Prueba de Eco</p>
-    <p class="mt-1 mb-0 google-font" style="font-size:80%">{{da.company.name}}</p>
+    <p class="mt-1 mb-0 google-font" style="font-size:80%">Realizada</p>
   </div>
 </template>
 
