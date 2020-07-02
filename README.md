@@ -120,9 +120,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 - Include relevant test updates/additions
 - Pull requests _must_ be made against `develop` branch. Any other branch (unless specified by the maintainers) will get rejected.
 
-## Contributors
-<b>Maintainer:</b> [Vrijraj Singh](https://github.com/vrijraj) <br>
-<b>Developers:</b> [Vrijraj Singh](https://github.com/vrijraj) &  [Bharat Agarwal](https://github.com/bharatagsrwal) 
+## Contributor
 
 ### View Website Built with Projects
 

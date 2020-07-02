@@ -35,10 +35,13 @@
         <p class="subtitle-2 google-font">
           Based on Project
           <a
-            href="https://github.com/gdg-x/aura/"
+            href="https://github.com/lutimi/"
             target="_blank"
             style="text-decoration:none"
+
+
           >Pregnancy Safe</a>
+>>>>>>> Feature-Calendar
         </p>
       </div>
     </template>
