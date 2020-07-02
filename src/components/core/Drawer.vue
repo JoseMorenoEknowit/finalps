@@ -38,7 +38,7 @@
             href="https://github.com/gdg-x/aura/"
             target="_blank"
             style="text-decoration:none"
-          >Aura</a>
+          >Pregnancy Safe</a>
         </p>
       </div>
     </template>

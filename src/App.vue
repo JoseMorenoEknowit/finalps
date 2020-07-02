@@ -25,7 +25,7 @@
         <v-row justify="center" align="center" class>
           <v-col cols="12" md="12" class="text-center">
             <p class="google-font">Either Your Internet is not Working or Site is not Configured</p>
-            <p class="google-font">Follow the Docs for <a target="_blank" href="https://github.com/gdg-x/aura" >Aura</a> & <a target="_blank" href="https://github.com/gdg-x/aura-admin">Aura Admin</a></p>
+            <p class="google-font">Follow the Docs for <a target="_blank" href="https://github.com/gdg-x/aura" >Pregnancy Safe</a> & <a target="_blank" href="https://github.com/gdg-x/aura-admin">Pregnancy Safex Admin</a></p>
           </v-col>
         </v-row>
       </v-container>

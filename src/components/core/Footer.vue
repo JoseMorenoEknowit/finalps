@@ -125,7 +125,7 @@
             target="_blank"
             rel="noreferrer"
             style="text-decoration:none"
-          > Aura</a></span>
+          > Pregnancy Safe</a></span>
           </v-toolbar>
         </v-col>
       </v-row>
