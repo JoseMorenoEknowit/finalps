@@ -6,13 +6,13 @@
       <template v-slot:activator="{ on }">
           <div v-on="on" style="cursor: pointer;" class="text-center py-5 ma-1 fill-height" :class="$vuetify.theme.dark == true?'darkModeCard':'whiteTheme'" >
                <v-avatar size="100">
-                  <img 
-                    :src="getImgUrl(data.image, 'profile.jpg')"
-                    :lazy-src="getImgUrl(data.image, 'profile.jpg')" alt=""
-                  >
+              
+     
+        <v-img src="https://i.ibb.co/BCMwqBj/person3.jpg" aspect-ratio="1.7"></v-img>
+ 
                 </v-avatar>
-                <p class="mt-3 mb-0 google-font mb-0" style="font-size:120%">{{data.name | summery(20)}}</p>
-                <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">{{data.designation | summery(20)}}</p>
+               
+                <p class="mt-1 mb-0 google-font mt-0" style="font-size:80%">Desarrolladores</p>
                 <socialMediaDetails :data="data.socialLinks"/>
           </div>
           
@@ -23,16 +23,17 @@
           class="px-5 google-font"
           primary-title
         >
-         {{data.name}} 
+         Luis Tcona
         </v-card-title>
 
         <v-card-text class="pa-5">
-            <p class="google-font">{{data.designation}}</p>
-            <p class="google-font">{{data.bio}}</p>
+            <p class="google-font">Soy estudiante de la carrera de ingenieria de software en la universidad peruana de ciencias aplicadas en la upc
+            </p>
+            <p class="google-font">Tengo 20 años </p>
             
-            <socialMediaDetails  class="pl-0 ml-0" :data="data.socialLinks"/>
+           
 
-            <v-btn class="primary mt-3" small depressed @click="goToTeam(data.id)">See More Info</v-btn>
+           
         </v-card-text>
 
         <v-divider></v-divider>
@@ -55,7 +56,7 @@
 import socialMediaDetails from '@/components/common/SocialInfo'
   export default {
     components:{
-        socialMediaDetails
+        
     },
     inject: ['theme'],
     props:['data'],
@@ -71,15 +72,9 @@ import socialMediaDetails from '@/components/common/SocialInfo'
       goToTeam(id){
         this.$router.push("/team/" + id);
       },
-    },
-    filters:{
-        summery: (val,num)=>{
-          if(val.length > num)
-            return val.substring(0,num)+".."
-          else
-            return val;
-        }
     }
-  }
+    
+    }
+  
 </script>
 

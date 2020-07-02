@@ -124,9 +124,9 @@ export default {
       if ("serviceWorker" in navigator) {
         var options = {
           body: "You Successfully Subscribed to Push Notifications",
-          icon: "img/icons/favicon-32x32.png",
+          icon: "img/icons/logoicono.png",
           dir: "ltr",
-          badge: "img/icons/favicon-32x32.png",
+          badge: "img/icons/logoicono.png",
           tag: "NewSubscription",
           renotify: true,
           actions: [

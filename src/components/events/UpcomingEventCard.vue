@@ -9,7 +9,7 @@
       >
         <!-- <v-chip color="primary" label outlined class="mt-1 mx-0 mb-0" small>{{data.data.status}}</v-chip> -->
         <p class="google-font mt-2 mb-0" style="font-size:90%">{{data.data.local_date | dateFilter}}</p>
-        <p class="google-font ma-0 mt-0" style="font-size:120%;">{{data.data.name |summary(20) }}</p>
+        <p class="google-font ma-0 mt-0" style="font-size:120%;">Revision Semanal</p>
         <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.local_time}}</p>
         <p
           class="google-font mt-0 mb-0"
@@ -40,17 +40,17 @@
         </p>
         <p class="google-font mt-3 mb-0" style="font-size:110%">
           <b>Description:</b>
-          <span v-html="$options.filters.summary(data.data.description,100)"></span>
+          En La siguiente revision Toca el chequeo semanal correspondiente a la fecha indicada
         </p>
         <v-btn
-          color="#1a73e8"
-          v-if="checkExistance(data.data.link,0)"
-          :href="data.data.link"
+          color="#FFBFFC"
+
+          href="https://renzodamgo.github.io/Juno-landing-page/"
           target="_blank"
           class="ma-0 elevation-0 my-2 mr-3"
           dark
           style="text-transform: capitalize;"
-        >See More at Meetup</v-btn>
+        >Enterate más</v-btn>
       </v-card-text>
 
       <v-divider></v-divider>

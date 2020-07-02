@@ -3,11 +3,11 @@ module.exports = {
     config.plugins.delete('prefetch')
   },
   "transpileDependencies": [
-    "vuetify"
+    "vsadasdy"
   ],
   productionSourceMap: false,
   pwa: {
-    name: 'Aura Main',
+    name: 'Lutimi main',
     workboxPluginMode: 'InjectManifest',
     themeColor: '#4A90E2',
     msTileColor: '#4A90E2',

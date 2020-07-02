@@ -8,15 +8,15 @@
     <v-row
       align="center"
       justify="center"
-      :style="{'background-image':'url('+require('@/assets/img/svg/bg.svg')+')'}"
+      :style="{'background-image':'url('+require('@/assets/img/Bebote.png')+')'}"
       style="background-position:right"
     >
       <v-col cols="12" md="12" lg="12" sm="12" class>
-        <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Upcoming Events</p>
+        <p class="google-font mb-0" style="font-size:150%;color: #FFBFFC;">Lo que nos espera</p>
         <p
           class="google-font mt-0"
           style="font-size:95%"
-        >Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.</p>
+        >Estos son las siguiente citas importantes proximas! </p>
         <v-row v-if="showLoader">
           <v-col md="3" lg="3" sm="6" cols="12" class="pa-2" v-for="(item,i) in 3" :key="i">
             <v-sheet :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`" class>

@@ -1,57 +1,46 @@
 <template>
-  <v-container fluid class="py-0">
-    <v-row align="center" class="fill-height">
-      <v-col md="3" sm="6" cols="12" class>
-        <v-img
-          :src="require('@/assets/img/svg/home.svg')"
-          :lazy-src="require('@/assets/img/svg/home.svg')"
-          width="100%"
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-      <v-col md="9" sm="6" cols="12" class="px-0">
+  <v-container id="back" fluid class="v-responsive__content " style="background: url(src/assets/img/pr.png);">
+    <div class="text-center">  
+        <v-col>
         <p
-          class="google-font mb-1"
+          class="google-font mb-1 "
           :class="$vuetify.theme.dark == true?'dark-font-color':'light-font-color'"
           style="font-weight: 350;font-size:230%"
         >
-          <b>
-            Make good things
-            <span style="color: #1a73e8;">together</span>.
+          <b class="text-center display-3">
+             Pregnancy
+            <span style="color: #FDC5E0;">Safe</span>
           </b>
         </p>
-        <p class="google-font mt-0 mb-0" style="font-size:150%">{{config.generalConfig.name}}</p>
-        <p class="google-font" style="font-size:100%">{{config.generalConfig.shortDescription}}</p>
-        <p class="google-font" style="font-size:100%;color:#9e9e9e">
-          <span v-for="(item,i) in config.generalConfig.hashtags" :key="i">
-            <v-chip
-              :href="'https://twitter.com/hashtag/'+item"
-              rel="noreferrer"
-              target="_blank"
-              small
-              class="mr-1"
-            >#{{item}}</v-chip>
-            <!-- &nbsp; -->
-          </span>
-        </p>
+       <div>  
+         <a href="
+         "></a>
+       </div>
+     <header class="pshome">
 
-        <v-btn
-          v-if="checkExistance(config.generalConfig.becomemember,0)"
-          :href="config.generalConfig.becomemember"
+      <div class="container" style="background: url(/imgs/pr.png) !important;">
+        <div class="intro-text">
+          <div class="text-center display-4">Cuida tu embarazo</div>
+          <div class="text-center display-3">Resuelve todas tus dudas</div>
+    
+        </div>
+      </div>
+    </header>
+
+    
+         
+        <v-btn style:
+          
+   
           target="_blank"
           rel="noreferrer"
           aria-label="Become a Member"
-          class="ma-0 google-font elevation-1 primary mr-2"
+          class="color: #BEB5F5 ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
-        >Become a Member</v-btn>
+        >Empieza</v-btn>
         <v-btn
-          v-if="checkExistance(config.generalConfig.learnMoreLink,0)"
-          :href="config.generalConfig.learnMoreLink"
+
+          href="https://renzodamgo.github.io/Juno-landing-page/"
           target="_blank"
           aria-label="Learn More"
           rounded
@@ -61,9 +50,10 @@
           outlined
           class="ml-0"
           dark
-        >Learn More</v-btn>
-      </v-col>
-    </v-row>
+        >Saber mas</v-btn>
+      </v-col></div>
+
+   
   </v-container>
 </template>
 
@@ -85,4 +75,14 @@ export default {
 .light-font-color {
   color: #616161;
 }
+.back {
+
+  background-image: url("/imgs/pr.png");
+  background-size: cover;
+
+}
+#inspire {
+  background: none;
+}
+
 </style>

@@ -1,8 +1,5 @@
-# Aura v3
+# Preganancy safe
 
-<img src="https://github.com/GDG-Jalandhar/WebsiteData/blob/master/Aura%20Main%20v3%20Dark%20.png?raw=true" width="420em"><img src="https://github.com/GDG-Jalandhar/WebsiteData/blob/master/Aura%20Main%20v3%20Light.png?raw=true" width="420em">
-
-[![MadeWithVueJs.com shield](https://madewithvuejs.com/storage/repo-shields/1444-shield.svg)](https://madewithvuejs.com/p/aura/shield-link)
 
 
 Standard Web App for Tech Communties. <br>
@@ -31,35 +28,6 @@ Aura is the Web App that helps you to mange the Tech Communities like GDGs, DSCs
 | **Public shareable URL for Team & Speakers** | Team member public URL for Self Branding and Public Speaker Directory & Public URL for Promotion |
 
 
-The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) team experience of running meetups/events.
-
-## Getting Started
-
-1. [Fork this repository](https://github.com/gdg-x/aura/fork) & [Aura Admin](https://github.com/gdg-x/aura-admin/fork) (Important) and clone both repo locally
-1 To Setup `Aura Main` follow this and to setup [Aura Admin](https://github.com/gdg-x/aura-admin)
-1. Use same [Firebase account](https://console.firebase.google.com) project for both `Admin` & `Aura Main`
-1. Setup Environment
-    - Install [Node.js (v8.9.4 or above)](https://nodejs.org/en/download/)
-    - Install vue cli: `npm install -g @vue/cli`
-1. Install project dependencies: `npm install` 
-1. Create [Firebase account](https://console.firebase.google.com) and Create a new Project if you have not any (Kindly use same project for both repo ([Aura Admin](https://github.com/gdg-x/aura-admin) & [Aura Main](https://github.com/gdg-x/aura)))
-1. Go to Firebase Project Dashboard
-1. Go to Cloud Firestore Database and Enable the database in test mode
-1. Update the Rule
-    ```js
-        rules_version = '2';
-        service cloud.firestore {
-            match /databases/{database}/documents {
-                match /apiEnd/{apiEndpoint}{
-    	            allow read, write : if true;
-                }
-                match /{document=**} {
-                    allow read : if true;
-                    allow write : if request.auth.uid != null;
-                }
-            }
-        }
-    ```
 1. In the Firebase project console dashboard. Click on create new web app
 1. Go to Firebase project Settings and then General Settings Tab
 1. Scroll down and go to your app section under Firebase SDK snippet
@@ -152,9 +120,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 - Include relevant test updates/additions
 - Pull requests _must_ be made against `develop` branch. Any other branch (unless specified by the maintainers) will get rejected.
 
-## Contributors
-<b>Maintainer:</b> [Vrijraj Singh](https://github.com/vrijraj) <br>
-<b>Developers:</b> [Vrijraj Singh](https://github.com/vrijraj) &  [Bharat Agarwal](https://github.com/bharatagsrwal) 
+## Contributor
 
 ### View Website Built with Projects
 

@@ -24,7 +24,7 @@ export default new Vuex.Store({
         },
       },
       {
-        text: 'Events',
+        text: 'Mi Calendario',
         to: '/events',
         icon: 'mdi-assistant',
         meta: {
@@ -33,7 +33,7 @@ export default new Vuex.Store({
         },
       },
       {
-        text: 'Team',
+        text: 'Mi Equipo',
         to: '/team',
         icon: 'mdi-account-settings',
         meta: {
@@ -42,7 +42,7 @@ export default new Vuex.Store({
         },
       },
       {
-        text: 'Speakers',
+        text: 'Exámenes Medicos',
         to: '/speakers',
         icon: 'mdi-assistant',
         meta: {
@@ -50,17 +50,9 @@ export default new Vuex.Store({
           showBottomNav: false
         },
       },
+    
       {
-        text: 'About',
-        to: '/about',
-        icon: 'mdi-comment-alert',
-        meta: {
-          showToolbar: true,
-          showBottomNav: true
-        },
-      },
-      {
-        text: 'Contact',
+        text: 'Mi obstreticia',
         to: '/contact',
         icon: 'mdi-contacts',
         meta: {
@@ -78,7 +70,7 @@ export default new Vuex.Store({
         },
       },
       {
-        text: 'Blogs',
+        text: 'Galeria',
         to: '/blogs',
         icon: 'mdi-blogger',
         meta: {
