@@ -41,7 +41,7 @@
 
 
           >Pregnancy Safe</a>
->>>>>>> Feature-Calendar
+
         </p>
       </div>
     </template>

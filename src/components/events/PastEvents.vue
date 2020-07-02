@@ -9,8 +9,8 @@
             <v-col cols="12" md="12" lg="12" sm="12" class="">
                 <v-row>
                     <v-col md="6" lg="6" sm="6" cols="12">
-                        <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Directory of past events</p>
-                        <p class="google-font mt-0 mb-0" style="font-size:95%">Events are listed in reverse chronological order by date.</p>
+                        <p class="google-font mb-0" style="font-size:150%;color: #FFBFFC;">Citas Previas</p>
+                        <p class="google-font mt-0 mb-0" style="font-size:95%">Las Citas se mostrarán en la seccion de abajo</p>
                     </v-col>
                     <v-col md="6" lg="6" sm="6" cols="12">
                         <v-text-field
@@ -70,12 +70,12 @@ import { mapState } from 'vuex'
             errorMsg: '',
             headers: [
                 {
-                    text: 'Event Name',
+                    text: 'Cita',
                     align: 'start',
                     value: 'name',
                 },
-                { text: 'Date', value: 'local_date' },
-                { text: 'See More', value: 'link' },
+                { text: 'Día', value: 'local_date' },
+                { text: 'Detalles', value: 'link' },
             ],
         }),
         mounted(){
@@ -84,7 +84,7 @@ import { mapState } from 'vuex'
         methods:{
             getAllMeetupPastEvents(){
                 this.isLoading = true
-                service.getAllMeetupPastEvents(this.config.keysandsecurity.meetup).then(res=>{
+                service.getAllMeetupPastEvents(3422345).then(res=>{
                     if(res.success){
                         this.eventsData = res.data
                         this.isLoading = false

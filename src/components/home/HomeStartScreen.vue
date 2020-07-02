@@ -1,5 +1,5 @@
 <template>
-  <v-container id="back" fluid class="v-responsive__content " style="background: url('/imgs/pr.png');">
+  <v-container id="back" fluid class="v-responsive__content " style="background: url(src/assets/img/pr.png);">
     <div class="text-center">  
         <v-col>
         <p
@@ -26,7 +26,7 @@
         </div>
       </div>
     </header>
-      
+
     
          
         <v-btn style:
@@ -39,8 +39,8 @@
           style="text-transform: capitalize;border-radius:5px;color:white"
         >Empieza</v-btn>
         <v-btn
-          v-if="checkExistance(config.generalConfig.learnMoreLink,0)"
-          :href="config.generalConfig.learnMoreLink"
+
+          href="https://renzodamgo.github.io/Juno-landing-page/"
           target="_blank"
           aria-label="Learn More"
           rounded
@@ -52,7 +52,7 @@
           dark
         >Saber mas</v-btn>
       </v-col></div>
-    
+
    
   </v-container>
 </template>
@@ -76,8 +76,10 @@ export default {
   color: #616161;
 }
 .back {
+
   background-image: url("/imgs/pr.png");
   background-size: cover;
+
 }
 #inspire {
   background: none;

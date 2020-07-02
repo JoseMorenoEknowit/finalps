@@ -29,7 +29,7 @@
             <p class="google-font">Follow the Docs for <a target="_blank" href="https://github.com/lutimi" >PregnancySafe</a> & <a target="_blank" href="https://github.com/lutimi">PregnancySafe Admin</a></p>
 
            
->>>>>>> Feature-Calendar
+
           </v-col>
         </v-row>
       </v-container>

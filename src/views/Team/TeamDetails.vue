@@ -165,7 +165,7 @@ export default {
       this.loader = true;
       this.notFound = false;
       service
-        .getTeamMember(id)
+        .getTeamMember(45)
         .then(res => {
           if (res.success == true) {
             this.loader = false;

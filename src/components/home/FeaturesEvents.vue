@@ -1,6 +1,11 @@
 <template>
   <v-container fluid class="mb-1">
-    <v-row align="center" justify="center" class>
+    <v-row
+      align="center"
+      justify="center"
+      :style="{'background-image':'url('+require('@/assets/img/logoicono.png')+')'}"
+      style="background-position:right"
+      >
       <v-col cols="12" md="12" lg="12" sm="12" class="mb-0">
         <p class="google-font mb-0 mt-0" style="font-weight: 350;font-size:180%">
           <b>

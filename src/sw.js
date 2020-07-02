@@ -19,10 +19,10 @@ self.addEventListener('push', (event)=>{
     }
     var options = {
         body: dataPush.body.body,
-        icon: 'img/icons/favicon-32x32.png',
+        icon: 'img/icons/logoicono.png',
         dir: 'ltr',
         image: dataPush.image,
-        badge: 'img/icons/favicon-32x32.png',
+        badge: 'img/icons/logoicono.png',
         tag: dataPush.tag,
         requireInteraction:true,
         renotify: true,
