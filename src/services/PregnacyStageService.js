@@ -1,12 +1,13 @@
-import axios from 'axios'
+import axios from 'axios';
+import base from '@/main';
 
 class pregnacyStageService{
     getAllpregnacyStage() {
-        return axios.get();
+        return axios.get(base.baseURL);
     }
 
     postpregnacyStage(user){
-        return axios.post({
+        return axios.post(base.baseURL,{
             range: user.range,
             description: user.description,
             name: user.name,
@@ -14,13 +15,13 @@ class pregnacyStageService{
     }
 
     putpregnacyStage(id,user){
-        return axios.put(id, {
+        return axios.put(base.baseURL + id, {
             name: user.name,
         });
     }
 
     deletepregnacyStage(id){
-        return axios.delete(id);
+        return axios.delete(base.baseURL + id);
 
     }
 

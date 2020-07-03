@@ -1,5 +1,5 @@
-import axios from 'axios'
-import base from '@/main'
+import axios from 'axios';
+import base from '@/main';
 
 class adviceService{
     getAlladvice() {

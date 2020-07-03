@@ -1,12 +1,13 @@
-import axios from 'axios'
+import axios from 'axios';
+import base from '@/main';
 
 class MedicalExamService{
     getAllMedicalExam() {
-        return axios.get();
+        return axios.get(base.baseURL);
     }
 
     postMedicalExam(user){
-        return axios.post({
+        return axios.post(base.baseURL, {
             examType: user.examType,
             description: user.description,
             result: user.result,
@@ -15,13 +16,13 @@ class MedicalExamService{
     }
 
     putMedicalExam(id,user){
-        return axios.put(id, {
+        return axios.put(base.baseURL + id, {
             date: user.date,
         });
     }
 
     deleteMedicalExam(id){
-        return axios.delete(id);
+        return axios.delete(base.baseURL + id);
 
     }
 
