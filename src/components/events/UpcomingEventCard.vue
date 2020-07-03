@@ -22,7 +22,7 @@
       <v-card-title
         class="px-5 py-5 google-font"
         style="background-position:right bottom;"
-      >{{data.data.name}}</v-card-title>
+      >Revision Semanal</v-card-title>
 
       <v-card-text class="pa-5">
         <!-- <v-chip :color="data.vdata.tag.color" label outlined class="mt-1 mb-0" small>{{data.vdata.tag.name}}</v-chip> -->
